@@ -130,28 +130,6 @@
             <div class="row">
                 <div class = "col-md-4 col-sm-6 portfolio-item">
 
-                    <a href="#portfolioModal1" class="portfolio-link" data-toggle="modal">
-                        <div class="portfolio-hover">
-                            <div class="portfolio-hover-content">
-                                <i class="fa fa-plus fa-3x"></i>
-                            </div>
-                        </div>
-                        <img id = "image1" alt = " " width = "349" height="249.26" />
-
-                    </a>
-                    <div class="portfolio-caption">
-                        <input type= "file"
-                        onchange="document.getElementById('image1').src = window.URL.createObjectURL(this.files[0])">
-                        <form class ="title-rename-form1">
-                            <input type = "text" class = "title-rename-1">
-                            <button type = "button" on click ="document.getElementById('title-rename-form3')">Submit</button>
-                        </form>
-                        <h4 class="title-1">Title</h4>
-
-                    </div>
-                </div>
-                <div class = "col-md-4 col-sm-6 portfolio-item">
-
                     <a href="#portfolioModal2" class="portfolio-link" data-toggle="modal">
                         <div class="portfolio-hover">
                             <div class="portfolio-hover-content">
@@ -164,11 +142,37 @@
                     <div class="portfolio-caption">
                         <input type= "file"
                         onchange="document.getElementById('image2').src = window.URL.createObjectURL(this.files[0])">
-                        <form class ="title-rename-form2">
+                         <iframe name="frame2">
+                        <form class ="title-rename-form2" target="frame3">
                             <input type = "text" class = "title-rename-2">
-                           <button type = "button" on click ="document.getElementById('title-rename-form3')">Submit</button>
+                            <button type = "button">Submit</button>
                         </form>
+                        </iframe>
                         <h4 class="title-2">Title</h4>
+
+                    </div>
+                </div>
+                <div class = "col-md-4 col-sm-6 portfolio-item">
+
+                    <a href="#portfolioModal3" class="portfolio-link" data-toggle="modal">
+                        <div class="portfolio-hover">
+                            <div class="portfolio-hover-content">
+                                <i class="fa fa-plus fa-3x"></i>
+                            </div>
+                        </div>
+                        <img id = "image3" alt = " " width = "349" height="249.26" />
+
+                    </a>
+                    <div class="portfolio-caption">
+                        <input type= "file"
+                        onchange="document.getElementById('image3').src = window.URL.createObjectURL(this.files[0])">
+                        <iframe name="frame3">
+                        <form class ="title-rename-form3" target="frame3">
+                            <input type = "text" class = "title-rename-3">
+                            <button type = "button">Submit</button>
+                        </form>
+                        </iframe>
+                        <h4 class="title-3">Title</h4>
 
                     </div>
                 </div>
